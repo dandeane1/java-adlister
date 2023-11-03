@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<form action="/pizza-order.jsp" method="POST">
+<form action="/pizzaOrder.jsp" method="POST">
     <%--@declare id="toppings"--%>
         <label for="crust">Crust Type:</label>
     <select name="crust" id="crust">
