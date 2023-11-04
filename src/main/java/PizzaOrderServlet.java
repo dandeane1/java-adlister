@@ -4,8 +4,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-@WebServlet(name="PizzaServlet", urlPatterns = "/pizza-order")
-public class PizzaServlet extends HttpServlet {
+@WebServlet(name="PizzaOrderServlet", urlPatterns = "/pizza-order")
+public class PizzaOrderServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String crust = request.getParameter("crust");
         String sauce = request.getParameter("sauce");
@@ -20,9 +20,10 @@ public class PizzaServlet extends HttpServlet {
 //                System.out.println(topping);
             }
         }
-        request.getRequestDispatcher("/pizzaOrder.jsp").forward(request, response);
+        request.getRequestDispatcher("/pizza-order.jsp").forward(request, response);
     }
+
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/pizzaOrder.jsp").forward(request,response);
+        request.getRequestDispatcher("/pizza-order.jsp").forward(request, response);
     }
 }
