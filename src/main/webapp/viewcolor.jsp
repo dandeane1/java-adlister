@@ -16,10 +16,9 @@
       background-color: ${color};
     }
   </style>
-  <title></title>
+  <title>View Color</title>
 </head>
 <body>
-<h1>Your favorite color is ${color}!</h1>
+<h1>Your favorite color is <c:out value="${color}" />!</h1>
 </body>
 </html>
-

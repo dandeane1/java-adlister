@@ -14,7 +14,7 @@
 </head>
 <body>
 <h1>Pick Your Favorite Color</h1>
-<form action="${pageContext.request.contextPath}/pickColorServlet" method="POST">
+<form action="${pageContext.request.contextPath}/pickColorServlet" method="post">
     <label>
         <input type="text" name="color" placeholder="Enter color">
     </label>
