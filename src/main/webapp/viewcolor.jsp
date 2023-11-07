@@ -1,3 +1,4 @@
+
 <%--
   Created by IntelliJ IDEA.
   User: danieldeane
@@ -5,18 +6,20 @@
   Time: 1:38PM
   To change this template use File | Settings | File Templates.
 --%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
 <head>
-  <title>View Color</title>
   <style>
     body {
       background-color: ${color};
     }
   </style>
+  <title></title>
 </head>
 <body>
-<h1>Your Favorite Color is ${color}!</h1>
+<h1>Your favorite color is ${color}!</h1>
 </body>
 </html>
-</html>
+

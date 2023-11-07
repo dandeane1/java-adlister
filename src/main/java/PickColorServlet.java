@@ -4,11 +4,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.net.URLEncoder;
 
-@WebServlet(name = "PickColorServlet", urlPatterns = "/pickColorServlet")
+@WebServlet(name = "PickColorServlet", urlPatterns = "/pickcolor")
 public class PickColorServlet extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        String color = request.getParameter("color");
-        response.sendRedirect("/viewColorServletColor=" + color);
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.getRequestDispatcher("/pickcolor.jsp").forward(request, response);
     }
-}
+
+
+    }
+

@@ -17,7 +17,7 @@ public class PizzaOrderServlet extends HttpServlet {
         if (toppings == null) {
             System.out.println("Toppings:");
             for (String topping : toppings) {
-
+//                System.out.println(topping);
             }
         }
         request.getRequestDispatcher("/pizza-order.jsp").forward(request, response);
