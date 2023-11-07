@@ -17,3 +17,15 @@ public class ViewColorServlet extends HttpServlet {
     }
 
 }
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        HttpSession session = request.getSession();
+        if (session.getAttribute("sessionColor") == null){
+            request.setAttribute("pageColor", "transparent");
+        } else {
+            request.setAttribute("pageColor", session.getAttribute("sessionColor"));
+        }
+​
+        request.setAttribute("ads", DaoFactory.getAdsDao().all());
+        request.getRequestDispatcher("/ads/index.jsp").forward(request, response);
+    }
+}
