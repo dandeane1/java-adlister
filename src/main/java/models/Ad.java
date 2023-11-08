@@ -1,3 +1,5 @@
+package models;
+
 public class Ad {
     private long id;
     private long userId;
@@ -15,6 +17,9 @@ public class Ad {
         this.userId = userId;
         this.title = title;
         this.description = description;
+    }
+
+    public Ad(String title, String description) {
     }
 
     public long getId() {
