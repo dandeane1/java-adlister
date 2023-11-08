@@ -1,16 +1,23 @@
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 
-public class Album Serializable {
+public class Album implements Serializable {
 
-    private long id;
-    private String Author_First_Name;
-    private String Author_Last_Name;
+        private int id;
+        private String title;
+        private String artist;
 
+    public void setId(int i) {
+    }
 
+    public void setTitle(String s) {
+    }
 
-public Album(long id, String Author_First_Name, String Author_Last_Name) {
-    this.id = id;
-    this.Author_First_Name = Author_First_Name;
-    this.Author_Last_Name = Author_Last_Name;
-}
+    public void setArtist(String s) {
+    }
+    // Include other properties from the albums table
+
+        // Include getters and setters for all properties
+    }
